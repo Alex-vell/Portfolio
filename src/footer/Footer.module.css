@@ -1,0 +1,46 @@
+.footerBlock {
+    height: 50vh;
+    background-color: khaki;
+    padding: 20px 0 20px 0;
+}
+
+.container {
+    border: 1px solid black;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerIcon {
+    border: 1px solid black;
+    width: 560px;
+    background-color: silver;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    background-color: rosybrown;
+    width: 80px;
+    height: 80px;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+    .containerIcon {
+        width: 280px
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .copyright {
+        width: 80%;
+        text-align: center
+    }
+}

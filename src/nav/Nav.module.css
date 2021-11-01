@@ -1,4 +1,10 @@
-.header{
-    height: 80px;
-    background-color: lightsteelblue;
+.nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
 }
