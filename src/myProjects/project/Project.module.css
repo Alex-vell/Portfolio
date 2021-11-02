@@ -1,6 +1,6 @@
 .project {
     width: 500px;
-    margin-bottom: 10px;
+    margin: 10px;
     background-color: rosybrown;
     display: flex;
     flex-direction: column;
