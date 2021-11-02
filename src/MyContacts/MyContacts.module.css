@@ -1,12 +1,12 @@
 .contactsBlock {
-    height: 80vh;
+    min-height: 80vh;
     background-color: skyblue;
     padding: 20px 0 20px 0;
 }
 
 .container {
     border: 1px solid black;
-    height: 100%;
+    min-height: 80vh;
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -15,7 +15,11 @@
     align-items: center;
 }
 
-.formCont {
+.titleBlock {
+    background-color: white;
+}
+
+.form {
     width: 300px;
     background-color: darkgrey;
     display: flex;
@@ -31,8 +35,12 @@
 
 }
 
-@media (min-width: 320px) and (max-width: 1199.98px) {
-    .formCont {
-        width: 280px
+.textarea {
+    max-width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .form {
+        width: 80%;
     }
 }

@@ -1,5 +1,6 @@
 .project {
     width: 500px;
+    margin-bottom: 10px;
     background-color: rosybrown;
     display: flex;
     flex-direction: column;
@@ -7,16 +8,19 @@
     text-align: center;
 }
 
-.icon {
+.imgContainer {
     height: 200px;
     width: 100%;
     background-color: purple;
+    /*background-image: url("");
+    background-size: cover;
+    background-position: center;*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.iconButton {
+.linkCont {
     background-color: darkcyan;
     width: 120px;
     height: 25px;
@@ -24,7 +28,7 @@
 
 .titleProject {
     background-color: darkgrey;
-    margin-left: 20px;
+    margin: 10px 0 10px 20px
 }
 
 .description {

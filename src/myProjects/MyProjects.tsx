@@ -4,9 +4,7 @@ import {Project} from "./project/Project";
 
 export const MyProjects = () => {
 
-
-    const textDescription = 'asf as as as as fasf asfasfsdgdgsdg sdg sdg sdg sdg sdg sdg sdasf asf a'
-
+    const textDescription = 'asf as as as as fasf asfasfsdgdgsdg sdgsdf sdf sd f sdf sdg sdg sdg sdg sdg sdasf asf a'
 
     return (
         <div className={s.projectsBlock}>
@@ -15,6 +13,7 @@ export const MyProjects = () => {
                 <div className={s.projects}>
                     <Project title={'TodoList'} description={'sssss'}/>
                     <Project title={'Social Network'} description={textDescription}/>
+                    <Project title={'Counter'} description={'sjfkfgf gdf dfg '}/>
                 </div>
             </div>
         </div>

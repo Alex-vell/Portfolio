@@ -5,11 +5,11 @@ export const MyContacts = () => {
     return (
         <div className={s.contactsBlock}>
             <div className={s.container}>
-                <div><h2>Contact</h2></div>
-                <form className={s.formCont}>
+                <h2 className={s.titleBlock}>Contact</h2>
+                <form className={s.form}>
                     <input className={s.input}/>
                     <input className={s.input}/>
-                    <textarea></textarea>
+                    <textarea className={s.textarea}></textarea>
                 </form>
                 <button className={s.button}>Send</button>
             </div>

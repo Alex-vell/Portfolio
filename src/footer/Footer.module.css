@@ -4,7 +4,8 @@
     padding: 20px 0 20px 0;
 }
 
-.container {
+.footerContainer {
+    padding: 10px;
     border: 1px solid black;
     height: 100%;
     width: 80%;
@@ -15,7 +16,11 @@
     align-items: center;
 }
 
-.containerIcon {
+.name {
+    background-color: white;
+}
+
+.iconContainer {
     border: 1px solid black;
     width: 560px;
     background-color: silver;
@@ -29,9 +34,13 @@
     height: 80px;
 }
 
+.copyright {
+    background-color: white;
+}
+
 @media (min-width: 300px) and (max-width: 800px) {
-    .containerIcon {
-        width: 280px
+    .iconContainer {
+        width: 80%;
     }
 
     .icon {
