@@ -1,0 +1,7 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.App {
+background-color: $bgColor;
+  margin: -10px -8px -10px -10px;
+}

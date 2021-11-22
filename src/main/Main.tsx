@@ -1,5 +1,5 @@
 import React from "react";
-import s from './Main.module.css'
+import s from './Main.module.scss'
 
 export const Main = () => {
     return (
@@ -8,7 +8,7 @@ export const Main = () => {
                 <div className={s.photo}></div>
                 <div className={s.greetings}>
                     <span>Hi There</span>
-                    <h1>Alex Vell</h1>
+                    <h1>Alexander Velichko</h1>
                     <p>Frontend Developer</p>
                 </div>
             </div>
