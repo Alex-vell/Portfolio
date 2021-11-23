@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Footer.module.scss'
-import {Title} from "../common/components/title/Title";
 import linkedinLogo from './../assets/image/footer/linkedin_img.png'
 import gitHubLogo from './../assets/image/footer/gitGub_img.png'
 import emailLogo from './../assets/image/footer/email_img.png'
@@ -25,7 +24,7 @@ export const Footer = () => {
     return (
         <div className={s.footerBlock}>
             <div className={s.footerContainer}>
-                <Title text={'Alexander Velichko'}/>
+                <h3 className={s.title}>Alexander Velichko</h3>
                 <div className={s.iconContainer}>
                     <div style={linkedin} className={s.icon}></div>
                     <div style={gitHub} className={s.icon}></div>

@@ -4,10 +4,14 @@
 .footerBlock {
   height: 30vh;
   background-color: $bgColor;
+  padding: 10px 0;
+  @media (min-width: 300px) and (max-width: 800px) {
+    height: 40vh;
+  }
 
   .footerContainer {
     padding: 10px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -16,8 +20,15 @@
     justify-content: space-between;
     align-items: center;
 
+    .title {
+      @include text($titleFontFamily, 27px, 300, 1.2);
+      @media (min-width: 300px) and (max-width: 800px) {
+        @include text($titleFontFamily, 22px, 300, 1.2);
+      }
+    }
+
     .iconContainer {
-      width: 560px;
+      width: 400px;
       display: flex;
       justify-content: space-between;
       @media (min-width: 300px) and (max-width: 800px) {
@@ -25,7 +36,7 @@
       }
 
       .icon {
-        background-color: $bgSecondColor;
+        background-color: $bgColor;
         width: 40px;
         height: 40px;
         border-radius: 50px;
@@ -33,9 +44,9 @@
         background-position: center;
         background-repeat: no-repeat;
 
-          &:hover {
-              background-color: $textColor;
-          }
+        &:hover {
+          background-color: $bgSecondColor;
+        }
 
         @media (min-width: 300px) and (max-width: 800px) {
           width: 45px;

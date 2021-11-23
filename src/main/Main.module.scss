@@ -2,82 +2,70 @@
 @import 'src/common/styles/sass/mixins';
 
 .mainBlock {
-    height: 100vh;
-    background-color: $bgColor;
-    padding: 20px 0 20px 0;
-    .container {
-        border: 1px solid black;
-        height: 100%;
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        @media (min-width: 300px) and (max-width: 400px) {
-            justify-content: center;
-        }
-        .photo {
-            width: 300px;
-            height: 300px;
-            border-radius: 150px;
-            background-color: white;
-            @media (min-width: 300px) and (max-width: 400px) {
-                width: 200px;
-                height: 200px;
-                border-radius: 100px;
-            }
-        }
-        .greetings {
-            width: 350px;
-            background-color: $bgColor;
-            @media (min-width: 300px) and (max-width: 500px) {
-                width: 200px;
-            }
-            & span, p{
-                @include text($textFontFamily, 1.2rem, 400, 1.2);
-                text-transform: capitalize;
-                letter-spacing: 8px;
-                color: #fff;
-                margin: 0;
-                @media (min-width: 300px) and (max-width: 500px) {
-                    @include text($textFontFamily, 1.4rem, 300, 1.2);
-                    display: flex;
-                    justify-content: flex-start;
-                }
-            }
-            & h1 {
-                @include text($titleFontFamily, 90px, 700, 1.2em);
-                text-transform: capitalize;
-                margin-bottom: 30px;
-                margin-top: 20px;
-                @media (min-width: 300px) and (max-width: 500px) {
-                    @include text($titleFontFamily, 50px, 500, 1.2em);
-                    display: flex;
-                    justify-content: flex-start;
-                }
+  height: 100vh;
+  background-color: $bgColor;
+  padding: 20px 0 20px 0;
 
-            }
-        }
-    }
-}
-
-
-
-
-
-
-
-/*
-!*media-query*!
-@media (min-width: 300px) and (max-width: 400px) {
-    .container {
-        justify-content: center;
+  .container {
+    /*border: 1px solid black;*/
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @media (min-width: 300px) and (max-width: 400px) {
+      justify-content: center;
     }
 
     .photo {
+      width: 300px;
+      height: 300px;
+      border-radius: 150px;
+      background-color: white;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      @media (min-width: 300px) and (max-width: 400px) {
         width: 200px;
         height: 200px;
         border-radius: 100px;
+      }
     }
-}*/
+
+    .greetings {
+      width: 350px;
+      background-color: $bgColor;
+      @media (min-width: 300px) and (max-width: 500px) {
+        width: 200px;
+      }
+
+      & span, p {
+        @include text($textFontFamily, 1.2rem, 400, 1.2);
+        text-transform: capitalize;
+        letter-spacing: 8px;
+        color: #fff;
+        margin: 0;
+        @media (min-width: 300px) and (max-width: 500px) {
+          @include text($textFontFamily, 1.4rem, 300, 1.2);
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+
+      & h1 {
+        @include text($titleFontFamily, 90px, 700, 1.2em);
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        @media (min-width: 300px) and (max-width: 500px) {
+          @include text($titleFontFamily, 50px, 500, 1.2em);
+          display: flex;
+          justify-content: flex-start;
+        }
+
+      }
+    }
+  }
+}

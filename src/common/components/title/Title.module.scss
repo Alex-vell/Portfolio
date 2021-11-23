@@ -3,11 +3,6 @@
 
 .title {
   & h2 {
-    /*font-family: 'Berkshire Swash', cursive;
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: $textColor;*/
-    /*line-height: 1.2;*/
     @include text($titleFontFamily, 3.2rem, 700, 1.2);
 
 
