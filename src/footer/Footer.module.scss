@@ -17,9 +17,7 @@
     align-items: center;
 
     .iconContainer {
-      /*border: 1px solid black;*/
       width: 560px;
-      /*background-color: silver;*/
       display: flex;
       justify-content: space-between;
       @media (min-width: 300px) and (max-width: 800px) {
