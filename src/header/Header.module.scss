@@ -3,8 +3,15 @@
 
 .header {
     height: 80px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
     background-color: $bgSecondColor;
     display: flex;
+    @media (min-width: 320px) and (max-width: 600px) {
+        height: 40px;
+    }
+
     .headerCont {
         width: 90%;
         display: flex;

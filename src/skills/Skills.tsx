@@ -14,6 +14,7 @@ import storybookImg from '../assets/image/skillsImg/storybook_img.png'
 import MUIImg from './../assets/image/skillsImg/MUI_img.png'
 import sassImg from './../assets/image/skillsImg/sass_img.png'
 import {Title} from "../common/components/title/Title";
+import {Link} from "react-scroll";
 
 
 export const Skills = () => {
@@ -56,8 +57,17 @@ export const Skills = () => {
 
 
     return (
-        <div className={s.skillsBlock}>
+        <div id={'section2'} className={s.skillsBlock}>
             <div className={s.skillsContainer}>
+
+                {/*<Link
+                    activeClass="active"
+                    to="section1"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}>up</Link>*/}
+
                 <Title text={'Skills'}/>
                 <div className={s.skills}>
                     <Skill title={'JS'} description={'JSs saf asf asf '} style={js}/>

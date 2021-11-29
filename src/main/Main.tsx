@@ -9,7 +9,7 @@ export const Main = () => {
     }
 
     return (
-        <div className={s.mainBlock}>
+        <div id={'section1'} className={s.mainBlock}>
             <div className={s.container}>
                 <div style={myPhoto} className={s.photo}></div>
                 <div className={s.greetings}>
