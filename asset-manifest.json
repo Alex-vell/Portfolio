@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.8ee27f00.chunk.css",
-    "main.js": "/Portfolio/static/js/main.5d2eeb15.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.5d2eeb15.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.07e397de.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.07e397de.js.map",
-    "static/js/2.400361b8.chunk.js": "/Portfolio/static/js/2.400361b8.chunk.js",
-    "static/js/2.400361b8.chunk.js.map": "/Portfolio/static/js/2.400361b8.chunk.js.map",
-    "static/js/3.3e58ad91.chunk.js": "/Portfolio/static/js/3.3e58ad91.chunk.js",
-    "static/js/3.3e58ad91.chunk.js.map": "/Portfolio/static/js/3.3e58ad91.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.d5bb8021.chunk.css",
+    "main.js": "/Portfolio/static/js/main.a7834c83.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.a7834c83.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.f7dc8abc.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.f7dc8abc.js.map",
+    "static/js/2.c07422ee.chunk.js": "/Portfolio/static/js/2.c07422ee.chunk.js",
+    "static/js/2.c07422ee.chunk.js.map": "/Portfolio/static/js/2.c07422ee.chunk.js.map",
+    "static/js/3.0fd80d14.chunk.js": "/Portfolio/static/js/3.0fd80d14.chunk.js",
+    "static/js/3.0fd80d14.chunk.js.map": "/Portfolio/static/js/3.0fd80d14.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.8ee27f00.chunk.css.map": "/Portfolio/static/css/main.8ee27f00.chunk.css.map",
-    "static/js/2.400361b8.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.400361b8.chunk.js.LICENSE.txt",
+    "static/css/main.d5bb8021.chunk.css.map": "/Portfolio/static/css/main.d5bb8021.chunk.css.map",
+    "static/js/2.c07422ee.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.c07422ee.chunk.js.LICENSE.txt",
+    "static/media/codeWars_logotype.7b044877.png": "/Portfolio/static/media/codeWars_logotype.7b044877.png",
     "static/media/email_img.0542ee90.png": "/Portfolio/static/media/email_img.0542ee90.png",
     "static/media/myPhoto_Portfolio.8ae32550.jpg": "/Portfolio/static/media/myPhoto_Portfolio.8ae32550.jpg",
     "static/media/react_img.93a4bdf1.png": "/Portfolio/static/media/react_img.93a4bdf1.png",
@@ -24,9 +25,9 @@
     "static/media/ts_img.9c26f8b2.png": "/Portfolio/static/media/ts_img.9c26f8b2.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.07e397de.js",
-    "static/js/2.400361b8.chunk.js",
-    "static/css/main.8ee27f00.chunk.css",
-    "static/js/main.5d2eeb15.chunk.js"
+    "static/js/runtime-main.f7dc8abc.js",
+    "static/js/2.c07422ee.chunk.js",
+    "static/css/main.d5bb8021.chunk.css",
+    "static/js/main.a7834c83.chunk.js"
   ]
 }
