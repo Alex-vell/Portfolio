@@ -43,39 +43,3 @@ export const Nav = () => {
     )
 }
 
-// export const Nav = () => {
-// //@ts-ignore
-//     document.querySelectorAll('a[href^="#"]').forEach(link => {
-//
-//         link.addEventListener('click', function(e) {
-//             e.preventDefault();
-//
-//             //@ts-ignore
-//             let href = this.getAttribute('href').substring(1);
-//
-//             const scrollTarget = document.getElementById(href);
-//
-//             //@ts-ignore
-//             const topOffset = document.querySelector('.scrollto').offsetHeight;
-//             // const topOffset = 0; // если не нужен отступ сверху
-//             //@ts-ignore
-//             const elementPosition = scrollTarget.getBoundingClientRect().top;
-//             const offsetPosition = elementPosition - topOffset;
-//
-//             window.scrollBy({
-//                 top: offsetPosition,
-//                 behavior: 'smooth'
-//             });
-//         });
-//     });
-//
-//     return (
-//         <div className={s.nav}>
-//             <a href='#element1'>Home</a>
-//             <a href='#element2'>Skills</a>
-//             <a href='#element3'>Projects</a>
-//             <a href='#element4'>Contact</a>
-//         </div>
-//     )
-// }
-

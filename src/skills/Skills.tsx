@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Skills.module.scss'
-import {Skill} from "./skill/Skill";
+/*import {Skill} from "./skill/Skill";
 import jsImg from './../assets/image/skillsImg/js_img.png'
 import tsImg from './../assets/image/skillsImg/ts_img.png'
 import htmlImg from './../assets/image/skillsImg/html_img.png'
@@ -12,13 +12,18 @@ import restAPIImg from './../assets/image/skillsImg/restAPI_img.png'
 import axiosImg from './../assets/image/skillsImg/axios_img.png'
 import storybookImg from '../assets/image/skillsImg/storybook_img.png'
 import MUIImg from './../assets/image/skillsImg/MUI_img.png'
-import sassImg from './../assets/image/skillsImg/sass_img.png'
+import sassImg from './../assets/image/skillsImg/sass_img.png'*/
+import laptopImg from './../assets/image/skillsImg/Laptop_logo.png'
+import designImg from './../assets/image/skillsImg/icon-design.png'
+import appImg from './../assets/image/skillsImg/icon-phone.png'
+import testImg from './../assets/image/skillsImg/icon-test.png'
 import {Title} from "../common/components/title/Title";
-import {Link} from "react-scroll";
+/*import {Link} from "react-scroll";*/
+import {SkillContainer} from "./SkillContainet";
 
 
 export const Skills = () => {
-    const js = {
+   /* const js = {
         backgroundImage: `url(${jsImg})`
     }
     const ts = {
@@ -53,11 +58,25 @@ export const Skills = () => {
     }
     const sass = {
         backgroundImage: `url(${sassImg})`
+    }*/
+    const laptop = {
+        backgroundImage: `url(${laptopImg})`
+    }
+    const design = {
+        backgroundImage: `url(${designImg})`
+    }
+    const app = {
+        backgroundImage: `url(${appImg})`
+    }
+    const test = {
+        backgroundImage: `url(${testImg})`
     }
 
 
     return (
         <div id={'section2'} className={s.skillsBlock}>
+
+
             <div className={s.skillsContainer}>
 
                 {/*<Link
@@ -70,6 +89,12 @@ export const Skills = () => {
 
                 <Title text={'Skills'}/>
                 <div className={s.skills}>
+                    <SkillContainer title={'Web Development'} style={laptop}/>
+                    <SkillContainer title={'App Development'} style={app}/>
+                    <SkillContainer title={'Testing'} style={test}/>
+                    <SkillContainer title={'Web Design'} style={design}/>
+                </div>
+                {/*<div className={s.skills}>
                     <Skill title={'JS'} description={'JSs saf asf asf '} style={js}/>
                     <Skill title={'TS'} description={'asf asf asaa aaa a a'} style={ts}/>
                     <Skill title={'HTML'} description={'sdf asdssssssssssss'} style={html}/>
@@ -82,9 +107,10 @@ export const Skills = () => {
                     <Skill title={'Storybook'} description={'sdf asdssssssssssss'} style={storybook}/>
                     <Skill title={'Material UI'} description={'sdf asdssssssssssss'} style={mui}/>
                     <Skill title={'Sass'} description={'sdf asdssssssssssss'} style={sass}/>
-                </div>
+                </div>*/}
             </div>
         </div>
     )
 }
+
 

@@ -1,0 +1,75 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.skillsBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  width: 300px;
+  background-color: $bgSecondColor;
+  @include text($textFontFamily, 1.2rem, 400, 1.2);
+  padding: 20px 0 20px 0;
+
+  box-shadow: 0 1px 5px hsl(0deg 0% 100% / 15%);
+  transition: all .3s ease 0s;
+
+  @media (min-width: 320px) and (max-width: 1199.98px) {
+    margin-bottom: 20px
+  }
+
+  &.skillsBlock:hover {
+    box-shadow: 0 5px 25px hsl(0deg 0% 100% / 15%);
+    transition: all .3s ease 0s;
+  }
+
+
+
+
+  .iconContainer {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid $bgColor;
+    background-color: $bgSecondColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+
+
+    .icon {
+      height: 40px;
+      width: 40px;
+      /* border-radius: 35px;*/
+      background-color: $bgSecondColor;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  &:hover {
+    box-shadow: 0 4px 15px rgba(255 255 255 / 15%);
+    -webkit-box-shadow: 0 3px 20px rgba(255 255 255 / 15%);
+
+    .iconContainer {
+      box-shadow: 0 5px 25px hsl(0deg 0% 100% / 15%);
+      transition: all .3s ease 0s;
+
+      .icon {
+
+      }
+    }
+  }
+
+
+}
+
+
+
+
+
+
+

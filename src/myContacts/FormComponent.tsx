@@ -10,6 +10,7 @@ type FormikDataType = {
     message: string
 }
 
+
 export const FormComponent = () => {
 
     const initialValues = {
@@ -18,9 +19,10 @@ export const FormComponent = () => {
         message: ''
     }
 
-    const onSubmit = (values: FormikDataType) => {
+    const onSubmit = () => {
 
     }
+
     const validationSchema = Yup.object().shape({
         name: Yup.string()
             .min(1, 'Too Short!')
@@ -72,7 +74,6 @@ export const FormComponent = () => {
                 <textarea
                     id="message"
                     name="message"
-                    /*type="textarea"*/
                     onChange={formik.handleChange}
                     value={formik.values.message}
                     placeholder="Enter message"
