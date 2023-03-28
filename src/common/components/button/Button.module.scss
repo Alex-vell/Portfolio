@@ -1,0 +1,26 @@
+@import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
+
+.button {
+  color: $activeColor;
+  background-color: transparent;
+  border: 1px solid $activeColor;
+  border-radius: 3px;
+  padding: 1rem 1.5rem;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 50px;
+  //opacity: 0;
+
+  &:hover {
+    background-color: rgba(165, 81, 253, 0.18);
+  }
+
+  @media (min-width: 0px) and (max-width: 369px) {
+    padding: 1rem 1.5rem;
+    font-size: 18px;
+  }
+}

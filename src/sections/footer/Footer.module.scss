@@ -1,0 +1,116 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.footerBlock {
+  height: 30vh;
+  background-color: $bgColor;
+  padding: 20px 0;
+  @media (min-width: 0px) and (max-width: 479px) {
+    height: 40vh;
+    padding: 20px;
+  }
+
+  .footerContainer {
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 580px) and (max-width: 1700px) {
+      width: 90%;
+    }
+    @media (min-width: 0px) and (max-width: 700px) {
+      width: 100%;
+    }
+
+    .title {
+      @include text($titleFontFamily, 24px, 400, 1.2);
+      text-transform: uppercase;
+      @media (min-width: 300px) and (max-width: 800px) {
+        @include text($titleFontFamily, 18px, 300, 1.2);
+      }
+    }
+
+    .infoBlock {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding-bottom: 20px;
+      border-bottom: $borderBottom;
+
+      @media (min-width: 480px) and (max-width: 1000px) {
+        width: 90%;
+      }
+      @media (min-width: 0px) and (max-width: 479px) {
+        flex-direction: column;
+        row-gap: 20px;
+        width: 100%;
+      }
+
+
+      .contactContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        .contactEl {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+
+          .img {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+          }
+
+          .titleCont {
+            @include text($textFontFamily, 18px, 400, 1.5);
+          }
+
+          .description {
+            @include text($textFontFamily, 15px, 300, 1.5);
+          }
+        }
+
+
+      }
+
+      .iconContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 40px;
+        padding: 5px;
+
+        .svg {
+          width: 24px;
+          height: 24px;
+          fill: $textColor;
+          transition: all 250ms;
+          cursor: pointer;
+        }
+
+        .svg:hover {
+          fill: $activeColor;
+        }
+      }
+    }
+
+    .copyright {
+      @include text($textFontFamily, 16px, 300, 1.5);
+      @media (min-width: 300px) and (max-width: 800px) {
+        width: 80%;
+        @include text($textFontFamily, 10px, 300, 1.5);
+        text-align: center
+      }
+    }
+  }
+}

@@ -1,12 +1,11 @@
 import React from 'react';
 import s from './App.module.scss';
-import {Header} from "./header/Header";
-import {Main} from "./main/Main";
-import {Skills} from "./skills/Skills";
-import {MyProjects} from "./myProjects/MyProjects";
-import {MyContacts} from "./myContacts/MyContacts";
-import {Footer} from "./footer/Footer";
-import {Link} from "react-scroll";
+import {Header} from "./sections/header/Header";
+import {Main} from "./sections/main/Main";
+import {Skills} from "./sections/skills/Skills";
+import {MyProjects} from "./sections/myProjects/MyProjects";
+import {MyContacts} from "./sections/myContacts/MyContacts";
+import {Footer} from "./sections/footer/Footer";
 
 function App() {
 

@@ -2,8 +2,8 @@
 @import 'src/common/styles/sass/mixins';
 
 .title {
-  & h2 {
-    @include text($titleFontFamily, 3.2rem, 700, 1.2);
+  & h3 {
+    @include text($titleFontFamily, 2.2rem, 700, 1.2);
 
 
     text-transform: capitalize;

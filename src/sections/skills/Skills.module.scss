@@ -1,0 +1,143 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.skillsBlock {
+  min-height: 80vh;
+  background-color: $bgSecondColor;
+  padding: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  @media (min-width: 0px) and (max-width: 700px) {
+    padding: 20px;
+  }
+
+  .skillsContainer {
+    width: 70%;
+    margin: 60px auto;
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (min-width: 1080px) and (max-width: 1700px) {
+      width: 90%;
+    }
+    @media (min-width: 0px) and (max-width: 1079px) {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      width: 40%;
+      row-gap: 40px;
+
+      @media (min-width: 701px) and (max-width: 1079px) {
+        width: 80%;
+        align-items: center;
+      }
+      @media (min-width: 0px) and (max-width: 700px) {
+        width: 100%;
+        align-items: center;
+      }
+
+      .photoContainer {
+        display: inline-block;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        background-image: url("../../assets/image/myPhoto_Portfolio2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .textContainer {
+        p {
+          @include text($titleFontFamily, 18px, 400, 1.7em);
+          color: $textColor;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .skillsWrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      width: 40%;
+      row-gap: 40px;
+
+      @media (min-width: 701px) and (max-width: 1079px) {
+        width: 80%;
+      }
+      @media (min-width: 0px) and (max-width: 700px) {
+        width: 100%;
+      }
+
+      .skills {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        @media (min-width: 320px) and (max-width: 1199.98px) {
+        }
+
+        .skill {
+          padding: 1rem 2rem;
+          margin-bottom: 1.5rem;
+          background: rgba(230, 230, 230, 0.06);
+          border-radius: 5px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          column-gap: 10px;
+
+          @media (min-width: 800px) and (max-width: 1279px) {
+            padding: 0.8rem 1.4rem;
+          }
+          @media (min-width: 579px) and (max-width: 580px) {
+            padding: 0.8rem 1.4rem;
+          }
+          @media (min-width: 0px) and (max-width: 580px) {
+            padding: 0.6rem 1rem;
+          }
+
+          .skillImg {
+            width: 28px;
+            height: 28px;
+            @media (min-width: 0px) and (max-width: 580px) {
+              width: 22px;
+              height: 22px;
+            }
+          }
+
+          span {
+            font-weight: 600;
+            color: #a9a9a9;
+            font-size: 1.2rem;
+            @media (min-width: 0px) and (max-width: 580px) {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

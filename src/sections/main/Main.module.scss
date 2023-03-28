@@ -1,0 +1,116 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.mainBlock {
+  min-height: 100vh;
+  background-color: $bgColor;
+  padding: 20px 0 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .bkgBlock {
+  }
+
+  .container {
+    min-height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    @media (min-width: 300px) and (max-width: 800px) {
+      justify-content: center;
+    }
+
+    .greetings {
+      background-color: $bgColor;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & span, p {
+        @include text($textFontFamily, 1.2rem, 400, 1.2);
+        letter-spacing: 8px;
+        margin: 0;
+        @media (min-width: 370px) and (max-width: 800px) {
+          @include text($textFontFamily, 1.2rem, 300, 1.2);
+          display: flex;
+          justify-content: flex-start;
+          letter-spacing: 4px;
+        }
+        @media (min-width: 0px) and (max-width: 369px) {
+          @include text($titleFontFamily, 1rem, 500, 1.2em);
+          display: flex;
+          justify-content: flex-start;
+          letter-spacing: 4px;
+        }
+      }
+
+      & h1 {
+        @include text($titleFontFamily, 90px, 700, 1.2em);
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        @media (min-width: 1280px) and (max-width: 1600px) {
+          @include text($titleFontFamily, 72px, 500, 1.2em);
+        }
+        @media (min-width: 800px) and (max-width: 1279px) {
+          @include text($titleFontFamily, 52px, 500, 1.2em);
+        }
+        @media (min-width: 370px) and (max-width: 799px) {
+          @include text($titleFontFamily, 32px, 500, 1.2em);
+        }
+        @media (min-width: 0px) and (max-width: 369px) {
+          @include text($titleFontFamily, 28px, 500, 1.2em);
+        }
+
+      }
+    }
+
+    .btnBlock {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1;
+      width: 300px;
+
+      .section {
+        color: $activeColor;
+        background-color: transparent;
+        border: 1px solid $activeColor;
+        border-radius: 3px;
+        padding: 1.25rem 1.75rem;
+        font-size: 18px;
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s;
+        margin-top: 50px;
+
+        &:hover {
+          background-color: rgba(165, 81, 253, 0.18);
+        }
+
+        @media (min-width: 0px) and (max-width: 369px) {
+          padding: 1rem 1.5rem;
+          font-size: 18px;
+        }
+      }
+
+    }
+  }
+
+  .particle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}

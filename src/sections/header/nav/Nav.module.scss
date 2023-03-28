@@ -1,0 +1,38 @@
+@import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
+
+.nav {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+
+  .section {
+    text-decoration: none;
+    @include text($textFontFamily, 18px, 400, 1.5);
+    cursor: pointer;
+
+    &:hover {
+      color: $activeColor;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+
+  .section:after {
+    display: block;
+    content: '';
+    width: 0;
+    transition: all 250ms;
+    border-bottom: 2px solid $activeColor;
+  }
+
+  .active {
+    color: $activeColor;
+  }
+
+  .active:after {
+    width: 100%;
+  }
+}

@@ -1,0 +1,179 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.contactsBlock {
+  min-height: 80vh;
+  background-color: $bgSecondColor;
+  padding: 20px 0 20px 0;
+
+  @media (min-width: 320px) and (max-width: 800px) {
+    padding: 20px 20px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+
+    .text {
+      @include text($textFontFamily, 18px, 400, 1.5);
+      margin: 20px 0 60px 0;
+      text-align: center;
+      max-width: 500px;
+    }
+  }
+
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 0px) and (max-width: 700px) {
+      width: 100%;
+      font-size: 1.8rem;
+    }
+
+    .containerForm {
+      width: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (min-width: 0px) and (max-width: 800px) {
+        width: 100%;
+      }
+
+      .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .inputBlock {
+          display: flex;
+          column-gap: 20px;
+
+          @media (min-width: 0px) and (max-width: 800px) {
+            flex-direction: column;
+            row-gap: 20px;
+          }
+
+          .inputWrap {
+            width: 50%;
+
+            @media (min-width: 0px) and (max-width: 800px) {
+              width: 100%;
+            }
+          }
+
+          .email, .name {
+            width: 100%;
+            height: 50px;
+            border: 0;
+            outline: none;
+            color: $textColor;
+            background-color: $bgColor;
+            padding: 20px;
+            font-size: 16px;
+
+            @media (min-width: 0px) and (max-width: 700px) {
+              width: 100%;
+              margin: 0;
+            }
+          }
+
+          .email {
+            @media (min-width: 0px) and (max-width: 800px) {
+              width: 100%;
+            }
+          }
+
+          .label:after {
+            display: block;
+            content: '';
+            width: 0;
+            border-bottom: 2px solid $activeColor;
+            transition: all 250ms;
+          }
+
+          .activeLabel:after {
+            width: 100%;
+            border-bottom: 2px solid $activeColor;
+          }
+
+          input:-webkit-autofill {
+            -webkit-animation-delay: 1s;
+            -webkit-animation-name: autofill;
+            -webkit-animation-fill-mode: both;
+          }
+
+          input:-webkit-autofill {
+            -webkit-text-fill-color: $textColor !important;
+            -webkit-box-shadow: 0 0 0 30px $bgColor inset !important;
+          }
+
+        }
+
+        & .textarea {
+          max-width: 100%;
+          width: 100%;
+          height: 200px;
+          margin-top: 20px;
+          outline: none;
+          resize: none;
+          border: 0;
+          color: $textColor;
+          padding: 20px;
+          font-size: 16px;
+          background-color: $bgColor;
+          @media (min-width: 0px) and (max-width: 800px) {
+            width: 100%;
+          }
+        }
+
+        .labelTextarea:after {
+          margin-top: -2px;
+          display: block;
+          content: '';
+          width: 0;
+          border-bottom: 2px solid $activeColor;
+          transition: all 250ms;
+        }
+
+        .activeLabelTextarea:after {
+          width: 100%;
+          border-bottom: 2px solid $activeColor;
+        }
+
+
+        & .button {
+          width: 200px;
+          float: right;
+
+          @media (min-width: 0px) and (max-width: 500px) {
+            width: 100%;
+          }
+        }
+
+        .respBlock {
+          padding: 10px;
+          height: 18px;
+
+          .successMessage {
+            font-size: 18px;
+            text-align: center;
+            color: rgba(47, 179, 28, 0.66);
+          }
+
+          .errorMessage {
+            font-size: 18px;
+            padding: 10px;
+            text-align: center;
+            color: rgba(199, 58, 58, 0.66);
+          }
+        }
+      }
+    }
+  }
+}
