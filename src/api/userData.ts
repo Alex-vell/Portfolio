@@ -71,7 +71,7 @@ export const user_data: IUserData = {
         },
         {
             title: "Todo list",
-            logo: projectsLogo.todolist,
+            logo: projectsLogo.todo1,
             screens: [projectsLogo.todo1],
             link: "https://alex-vell.github.io/TodoList_inc",
             id: 3,
